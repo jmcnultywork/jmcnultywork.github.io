@@ -135,7 +135,12 @@
       <!-- About Section Content -->
       <div class="row">
         <div class="col-lg-12 ml-auto">
-          <p class="lead">James McNulty, 37, was born in Sidcup, Kent (England). James grew up for a short while in Wamberal, New South Wales, Australia. James currently lives in Texas, USA with his wife Megan, daughter Penelope, and two dogs Colin and Davey.</p>
+          <p class="lead">James McNulty,  <?php
+$dateOfBirth = "04-15-1985";
+$today = date("Y-m-d");
+$diff = date_diff(date_create($dateOfBirth), date_create($today));
+echo .$diff->format('%y');
+  ?>, was born in Sidcup, Kent (England). James grew up for a short while in Wamberal, New South Wales, Australia. James currently lives in Texas, USA with his wife Megan, daughter Penelope, and two dogs Colin and Davey.</p>
           <p class="lead">James has been developing websites since the early 2000's, and has been passionate about search engine optimization, particularly technical SEO since 2010. James currently works full-time as a Senior Marketing Strategist at <a href="https://www.upbuild.io/" target="_blank">UpBuild</a>, an all-remote boutique digital marketing team specializing in the end-to-end optimization of the online user journey.</p>
           <p class="lead">James is also an avid music fan, has played guitar in a couple of bands, and enjoys writing and recording at home.</p>
         </div>
